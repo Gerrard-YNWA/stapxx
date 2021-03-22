@@ -158,7 +158,7 @@ function process(L)
 
     } else {
         /* for LuaJIT 2.1 */
-        sizetmpbuf = $*g->tmpbuf->e->ptr32 - $*g->tmpbuf->b->ptr64
+        sizetmpbuf = $*g->tmpbuf->e->ptr64 - $*g->tmpbuf->b->ptr64
     }
 
     if (sizetmpbuf) {
